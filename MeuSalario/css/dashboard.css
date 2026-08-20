@@ -1,0 +1,797 @@
+.summary {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 21px;
+
+}
+
+
+.card-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+.card-icon {
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+}
+
+
+.card h2 {
+
+    font-size: 23px;
+
+    margin: 17px 0 7px;
+
+}
+
+
+.card p {
+
+    font-size: 10px;
+
+    color: var(--muted);
+
+}
+
+
+.positive {
+
+    color: var(--green) !important;
+
+}
+
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.6fr 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.panel {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+}
+
+
+.panel-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.panel-header h3 {
+
+    font-size: 14px;
+
+}
+
+
+.panel-header p {
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    margin-top: 4px;
+
+}
+
+
+.chart-container {
+
+    height: 260px;
+
+}
+
+
+.expenses-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.expense-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    background: #fafafa;
+
+}
+
+
+.expense-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.expense-icon {
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 9px;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.expense-name {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.expense-category {
+
+    font-size: 9px;
+
+    color: var(--muted);
+
+    margin-top: 3px;
+
+}
+
+
+.expense-value {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.page-card {
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+}
+
+
+.page-card h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.page-card > p {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.big-value {
+
+    font-size: 35px;
+
+    font-weight: 800;
+
+}
+
+
+.expense-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+.expense-table th {
+
+    text-align: left;
+
+    font-size: 10px;
+
+    color: var(--muted);
+
+    padding: 12px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.expense-table td {
+
+    padding: 15px 12px;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid #f0f0f0;
+
+}
+
+
+.delete-button {
+
+    border: none;
+
+    background: #fee2e2;
+
+    color: var(--danger);
+
+    border-radius: 6px;
+
+    padding: 6px 9px;
+
+    font-size: 10px;
+
+}
+
+
+.goal-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.goal-card {
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+}
+
+
+.goal-card h3 {
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.goal-card p {
+
+    font-size: 10px;
+
+    color: var(--muted);
+
+}
+
+
+.progress {
+
+    height: 7px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    margin: 15px 0 8px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-bar {
+
+    height: 100%;
+
+    background: var(--green);
+
+    border-radius: inherit;
+
+}
+
+
+.investment-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.investment-card {
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+}
+
+
+.investment-card span {
+
+    font-size: 10px;
+
+    color: var(--muted);
+
+}
+
+
+.investment-card h3 {
+
+    margin-top: 8px;
+
+    font-size: 21px;
+
+}
+
+/* =========================================
+   INVESTIMENTOS
+========================================= */
+
+.investment-summary {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+.investment-summary-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.investment-summary-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.investment-summary-item span {
+
+    font-size: 11px;
+
+    color: var(--muted);
+
+}
+
+
+.investment-summary-item strong {
+
+    font-size: 15px;
+
+}
+
+
+.investment-section {
+
+    margin-bottom: 20px;
+
+}
+
+
+.investment-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.investment-row {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    border: 1px solid #f0f0f0;
+
+    border-radius: 10px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.investment-main {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.investment-symbol {
+
+    width: 38px;
+
+    height: 38px;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+
+}
+
+
+.investment-main strong {
+
+    display: block;
+
+    font-size: 12px;
+
+}
+
+
+.investment-main span {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: var(--muted);
+
+    margin-top: 3px;
+
+}
+
+
+.investment-data span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.investment-data strong {
+
+    font-size: 11px;
+
+}
+
+
+.empty-investments {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+.empty-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: var(--green-light);
+
+    color: var(--green);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    font-size: 25px;
+
+}
+
+
+.empty-investments h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.empty-investments p {
+
+    max-width: 400px;
+
+    margin: 0 auto 20px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+.simulator-card {
+
+    margin-top: 20px;
+
+}
+
+
+.simulator-form {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr;
+
+    gap: 15px;
+
+}
+
+
+.percentage-input,
+.months-input {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.percentage-input input,
+.months-input input {
+
+    border: none;
+
+    flex: 1;
+
+}
+
+
+.percentage-input span,
+.months-input span {
+
+    padding-right: 12px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+}
+
+
+.simulation-result {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.4fr;
+
+    gap: 15px;
+
+    margin-top: 10px;
+
+}
+
+
+.simulation-result > div {
+
+    padding: 20px;
+
+    background: #f7f8f8;
+
+    border-radius: 10px;
+
+}
+
+
+.simulation-result span {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.simulation-result strong {
+
+    font-size: 17px;
+
+}
+
+
+.simulation-final {
+
+    background: var(--green-light) !important;
+
+}
+
+
+.simulation-final strong {
+
+    color: var(--green-dark);
+
+    font-size: 23px;
+
+}
+
+
+.simulation-disclaimer {
+
+    color: #999;
+
+    font-size: 9px;
+
+    margin-top: 10px;
+
+}
